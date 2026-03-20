@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body style="margin:0; background:black;">
+<body style="margin:0">
 
-<video id="vid" autoplay muted playsinline style="width:100%;height:100vh;object-fit:cover;">
+<video autoplay muted loop playsinline style="width:100%;height:100vh;object-fit:cover;">
   <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
 </video>
 
-<script>
-  const v = document.getElementById("vid");
-
-  // Force play
-  v.play().catch(() => {});
-
-  // Try unmuting after a short delay
-  setTimeout(() => {
-    v.muted = false;
-  }, 1000);
-</script>
-
 </body>
-</html> 
+</html>
